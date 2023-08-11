@@ -1,0 +1,438 @@
+
+:root{
+    --yellow:#FFB808;
+    --almost-white:#E9EBE0;
+    --orange:#EC6817;
+    --red:#A60303;
+    --black:#040502;
+}
+/* font-family: 'Arvo', serif;
+font-family: 'DM Sans', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Arvo', serif;
+}
+header{
+    width: 100%;
+    height: 470px;
+    max-height: 470px;
+    min-height: 470px;
+    background-image: url('https://images.pexels.com/photos/1387075/pexels-photo-1387075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-width: 320px;
+}
+.header-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: var(--almost-white);
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    padding: 95px 10px;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+}
+.nav-bar{
+    display: flex;
+    list-style: none;
+    font-size: 2.0rem;
+    justify-content: space-around;
+    width: 600px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    height: 20px;
+    display:none;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: var(--almost-white);
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--almost-white);
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--yellow);
+  }
+  
+  nav ul li a:hover::before {
+    transform: scaleX(1);
+  }
+  
+.header__menu-container{
+    
+    width: 40px;
+    height: 40px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    border: 2px solid var(--black);
+    padding:7px 0;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+}
+.header__menu-container:hover{
+    
+    background-color: var(--orange);
+    box-shadow: 1px 2px 8px var(--yellow);
+}
+.header__menu{
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    background-image: url('../assets/icons/nav.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header__logo{
+    width: 20%;
+    max-width: 150px;
+    min-width: 76px;
+    margin-bottom: 15px;
+}
+.header__title{
+    font-size: 3.5rem;
+    margin-bottom: 100px;
+    
+}
+button{
+    height: 45px;
+    border:none;
+    background-color: var(--yellow);
+    box-shadow: 1px 1px 5px;
+    font-size:1.5rem ;
+    font-family: 'Arvo', serif;
+    border-radius: 4px;
+}
+.main__button, .primary-button{
+    width: 40%;
+    max-width: 200px;
+    position: absolute;
+    top: -70px;
+    min-width: 128px;
+}
+.primary-button:hover{
+    box-shadow: 1px 1px 8px var(--yellow);
+}
+
+.main__phrase-container .phrase-background{
+    background-color: rgba(256,256,256,0.8);
+    position: relative;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-radius:10px;
+    box-shadow: 1px 1px 8px;
+    max-width: 400px;
+}
+.main__phrase-container{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-size: 1.8rem;
+    color: var(--red);
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    min-width: 320px;
+    background-image: url('../assets/img/carne-asada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main__menu-container{
+    background-color: rgba(183,18,52);
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 80px 0;
+}
+.main__menu-container .menu__menu-icons:hover, .card__button:hover{
+    box-shadow: 1px 1px 8px var(--yellow);
+}
+.main__menu-container .menu__menu-icons span{
+    display: inline-block;
+    max-width: 400px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--yellow);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main__menu-container span:hover{
+    width: 45px;
+    height: 45px;
+    
+}
+.main__menu-container .menu__menu-icons{
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: 70%;
+    justify-content: space-evenly;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px;
+    position:absolute;
+    top: -25px;
+    height: 50px;
+    max-width: 400px;
+}
+
+.main__menu-container .menu__menu-icons .hamburguer{
+    background-image: url('../assets/icons/hamburger.svg');
+} 
+.main__menu-container .menu__menu-icons .fryes{
+    background-image: url('../assets/icons/fries.svg');
+} 
+.main__menu-container .menu__menu-icons .soda{
+    background-image: url('../assets/icons/soda.svg');
+} 
+.main__menu-container .menu__menu-icons .ice-cream{
+    background-image: url('../assets/icons/ice-cream.svg');
+} 
+
+.menu__cards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__cards-container .menu__card{
+    width: 100%;
+    height: 385px;
+    background-color: var(--black);
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px;
+    margin-bottom: 50px;
+    
+}
+.menu__card {
+    max-width: 240px;
+}
+.menu__card .card{
+width: 100%;
+height: 100%;
+min-width: 240px;
+position:relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.card .card__image{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0 0 ;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-bottom: 3px solid var(--almost-white);
+    margin-bottom: 60px;
+}
+.card .sencilla{
+    background-image: url('https://peterpan24horas.com/wp-content/uploads/2019/07/P2000.jpg');
+    background-size:400px;
+    background-position: -140px -50px;
+}
+.card .doble{
+    background-image: url('https://www.comedera.com/wp-content/uploads/2022/04/pan-de-mantequilla.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.card .especial{
+    background-image: url('https://artesanado.com/wp-content/uploads/2020/08/Integral-Natural-_1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.card .pan-dulce{
+    background-image: url('https://i.ytimg.com/vi/VBiAYU5ZhLg/maxresdefault.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.card .pan-maiz{
+    background-image: url('https://www.thearionsas.com/wp-content/uploads/2019/11/unnamed-3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.card .pan-miel{
+    background-image: url('https://www.bakelschile.cl/wp-content/uploads/sites/25/2022/03/IMG_5334-560x370.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.card .card__title{
+    background-color: var(--almost-white);
+    width: 80%;
+    position: absolute;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    top: 45%;
+    border-radius: 8px;
+}
+.card .card__text{
+    color: var(--almost-white);
+}
+
+.card .card__button{
+    position: absolute;
+    bottom: -20px;
+    font-weight: bold;
+    width: 50%;
+    font-size: 2rem;
+}
+.main__reto-container{
+    width: 100%;
+    background-image: url('../assets/img/fryes.jpg');
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main__reto-container .reto-container{
+    padding: 120px 0 ;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.main__reto-container h2{
+    font-size: 3.8rem;
+    color: var(--yellow);
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px;
+    border-radius: 4px;
+    padding: 4px;
+}
+.main__reto-container h2:hover{
+    box-shadow: 0px 8px 12px;
+    
+}
+
+.main__reto-container .reto__text{
+    background-color: var(--yellow);
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    box-shadow: 1px 1px 5px;
+}
+
+.main__reto-container .reto__text span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+.tex-icons-container{
+    height: 30px;
+    display: flex;
+}
+.main__reto-container .reto__text span:hover{
+    width: 30px;
+    height: 30px;
+}
+.main__reto-container  .reto__text .instagram{
+    /* background-color: red; */
+    background-image: url('../assets/icons/instagram.svg');
+}
+.main__reto-container .reto__text .facebook    {
+    background-image: url('../assets/icons/facebook.svg');
+}
+.main__reto-container .reto__text .tiktok{
+    background-image: url('../assets/icons/tiktok.svg');
+}
+.footer{
+    background-color: var(--orange);
+    height: 150px;
+    min-width: 320px;
+    width: 100%;
+    display: flex;
+    font-size:1.8rem ;
+    color:var(--almost-white);
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .footer__logo{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-image: url('../assets/icons/light-hamburger.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    
+}

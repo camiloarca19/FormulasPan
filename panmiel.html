@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/panmiel.css">
+  <title>panMiel</title>
+  
+</head>
+<body>
+
+  <div class="body-container">
+    <h1>Pan Miel</h1>
+    <form action="" class="latas-container">
+        <div class="text-container">
+            <label class="tipo-pan">tipo de pan</label>
+            <label class="cantidad">cantidad</label>
+            <label class="latas">latas</label>
+        </div>
+    
+      
+      </form>
+      <form class="resutados inactive">
+        <div class="ingrediente">
+            <label for="">harina</label>
+            <span>tanto</span>
+        </div>
+      </form>
+    <form class="peso-moje">
+      <label for="">Peso Moje</label>
+      <input id ="moje" type="number" value="250">
+    </form>
+    <div class="button-container">
+        <a href="/"><button class="back"></button></a>
+        <button class="done"></button>
+    </div>
+    <button class="cambiar-peso">Cambiar pesos</button>
+    <form action="" class="pesos-container inactive">
+      <div class="text-container">
+          <label class="tipo-pan">tipo de pan</label>
+          <label class="cantidad">Peso picada</label>
+          <label class="latas">peso unidad</label>
+      </div>
+    
+    </form>
+  </div>
+  <script src="panmiel.js"></script>
+</body>
+</html>

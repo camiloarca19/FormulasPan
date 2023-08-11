@@ -1,0 +1,156 @@
+:root{
+    --yellow:#FFB808;
+    --almost-white:#E9EBE0;
+    --orange:#EC6817;
+    --red:#A60303;
+    --black:#040502;
+}
+/* font-family: 'Arvo', serif;
+font-family: 'DM Sans', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.inactive{
+    display: none;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Arvo', serif;
+    color: var(--almost-white);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+    background-image: url('https://www.thearionsas.com/wp-content/uploads/2019/11/unnamed-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-width: 320px;
+}
+.body-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: var(--almost-white);
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    padding: 95px 10px;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+}
+h1{
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+form{
+    font-size: 1.6rem;
+    width: 320px;
+    background-color: var(--red);
+    border-radius: 10px;
+    padding: 20px;
+}
+.peso-moje{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+form div{
+    margin:10px 0;
+}
+.text-container{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.tipo-pan {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+label{
+    width: 50px;
+}
+input{
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border:none;
+    font-size: 18px;
+    width: 80px;
+    background-color: var(--almost-white);
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+.cambiar-peso{
+    width: 320px;
+    margin:10px 0;
+    height: 50px;
+}
+.button-container{
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+button{
+    font-family: 'Arvo', serif;
+    font-size: 2.4rem;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border:none;
+    transition: all 0.3s ease;
+}
+.done{
+    background-image: url('../assets/icons/pan.svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:40px;
+    background-color: #E9EBE0;
+    padding: 5px;
+    background-color: var(--yellow);
+}
+.back{
+    background-image: url('../assets/icons/horno.svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:40px;
+    background-color: #E9EBE0;
+    padding: 5px;
+}
+
+.ingrediente{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.ingrediente label{
+    width: 50%;
+    font-size: 2rem;
+}
+.ingrediente span{
+    width: 50%;
+    background-color: #E9EBE0;
+    color: #040502;
+    border-radius: 4px;
+    height: 30px;
+    padding: 4px;
+}
+.resutados{
+    margin-top: 10px;
+}
